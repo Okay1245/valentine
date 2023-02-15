@@ -1,0 +1,257 @@
+<!doctype html>
+    <html>
+       <style>
+           
+.fade-in-button{
+  animation: fadeIn 8s;
+  -webkit-animation: fadeIn 8s;
+  -moz-animation: fadeIn 8s;
+  -o-animation: fadeIn 8s;
+  -ms-animation: fadeIn 8s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.button-yes{
+color: lime;
+font-size: 50px;
+font-family: Cursive;
+padding-bottom: 25px;
+padding-top: 25px;
+padding-left: 70px;
+padding-right: 70px;
+border-color: lime;
+border-style: solid;
+background-color: rgba(0, 0, 0, 0.37);
+border-radius: 40px;
+position: absolute;
+bottom: 30%;
+right: 15%;
+}
+
+.button-yes:hover {
+border-radius: 20px;
+background-color: lime;
+color: white;
+box-shadow: 0 0 50px 15px lime;
+}
+
+.button-no{
+color: red;
+font-size: 50px;
+font-family: Cursive;
+padding-bottom: 25px;
+padding-top: 25px;
+padding-left: 70px;
+padding-right: 70px;
+border-color: red;
+border-style: solid;
+background-color: rgba(0, 0, 0, 0.37);
+border-radius: 40px;
+position: absolute;
+bottom: 30%;
+left: 15%;
+}
+
+.button-no:hover {
+border-radius: 20px;
+background-color: red;
+color: white;
+box-shadow: 0 0 50px 15px red;
+}
+          
+.container{
+  font-family: "cursive";
+  font-size: 90px;
+color: black;
+  display: grid;
+position: absolute;
+top: 17vh;
+left: 2vh;
+  width: 900px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+text-align: center;
+  animation: typing 5s steps(30, end) forwards, blinking 1s infinite;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking {
+  0% {border-color: transparent}
+  50% {border-color: black}
+  100% {border-color: transparent}
+}
+           
+/* BACKROUND */
+          
+          @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #ff6666;
+    overflow: hidden; 
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 32s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 13%;
+    width: 133px;
+    height: 133px;
+    bottom: -133px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 27%;
+    width: 146px;
+    height: 146px;
+    bottom: -146px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 44%;
+    width: 199px;
+    height: 199px;
+    bottom: -199px;
+    animation-delay: 7s;
+}
+.background li:nth-child(3) {
+    left: 26%;
+    width: 144px;
+    height: 144px;
+    bottom: -144px;
+    animation-delay: 12s;
+}
+.background li:nth-child(4) {
+    left: 0%;
+    width: 192px;
+    height: 192px;
+    bottom: -192px;
+    animation-delay: 4s;
+}
+.background li:nth-child(5) {
+    left: 16%;
+    width: 187px;
+    height: 187px;
+    bottom: -187px;
+    animation-delay: 6s;
+}
+.background li:nth-child(6) {
+    left: 46%;
+    width: 155px;
+    height: 155px;
+    bottom: -155px;
+    animation-delay: 4s;
+}
+.background li:nth-child(7) {
+    left: 73%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    animation-delay: 3s;
+}
+.background li:nth-child(8) {
+    left: 26%;
+    width: 153px;
+    height: 153px;
+    bottom: -153px;
+    animation-delay: 17s;
+}
+.background li:nth-child(9) {
+    left: 8%;
+    width: 152px;
+    height: 152px;
+    bottom: -152px;
+    animation-delay: 1s;
+}
+
+</style>
+       <body>
+          
+          <ul class="background">
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+   <li></li>
+</ul>
+           <div class="container">
+  <p class="typed"> <b>Will you be my Valentine?</b></p>
+</div>
+          <div class="fade-in-button">
+             
+  <a href="yes.html" target="_blank">        
+  <button class="button-yes"> Yes! </button>
+  </a>
+             
+             <a href="no.html">
+             <button class="button-no"> No! </button>             
+             </a>
+             
+</div>
+          
+       </body>
